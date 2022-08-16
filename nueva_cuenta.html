@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registro de Ususario</title>
+</head>
+<body>
+    <form action="" method="post" class="formulario" id="formulario">
+        <!--Nombre y apellido-->
+        <div class="form">
+            <h1>Registro de Usuario</h1>
+            <div class="formulario">
+                <label for="name">Nombre</label>
+                <br>
+                <input type="name" name="" size="15" id="nombre" placeholder="Ingrese su Nombre" required>
+            </div>
+            <!--Apellido-->
+            <div class="formulario">
+                <label for="apellido"> Apellido</label>
+                <br>
+                <input type="name" name="" size="15" id="apellido" placeholder="Ingrese su Apellido"required>
+            </div>
+             <!--Nacimineto-->
+            <div class="form">
+                <br>
+                <label for="nacimiento">Fecha de Nacimiento</label>
+                <br>
+                <input type="date" name="nacimiento" id="nacimiento"required>
+            </div>
+             <!--username-->
+            <div class="formulario">
+                <br>
+                <label for="user">Nombre de Usuario</label>
+                <br>
+                <input type="text" name="" id="user" size="15" placeholder="Escribe un nombre de usuario"required>
+            </div>
+             <!--contrasena-->
+            <div class="form">
+                <br>
+                <label for="pass">Nueva Contraseña</label>
+                <br>
+                <input type="password" name="password" id="pass" placeholder="Minimo de 8 caracteres"required>
+            </div>
+            <!--email-->
+            <div class="form">
+                <br>
+                <label for="mail">Email</label>
+                <br>
+                <input type="email" name="" id="mail" placeholder="Escriba correo electronico">
+            </div>
+
+             <!--Telefono-->
+             <div class="formulario">
+                <br>
+                <label for="celular">Celular</label>
+                <br>
+                <input type="text" name="" id="celular" maxlength="9" pattern="[0-9]{9}" placeholder= "Número de 9 cifras" required>
+
+            </div>
+
+            <!-- seleccion de ubicacion-->
+            <div class="formulario">
+                <br>
+                <label for="ubic">Direccion</label>
+                <br>
+                <input type="text" name="" id="ubic" placeholder="Escriba tu ubicacion actual"required>
+            </div>
+                        <!--Terminos y Condiciones-->
+            <div class="condiciones">
+                <br>
+                <input type="checkbox" name="terms" id="terms">Estoy de acuerdo con los terminos y condiciones<br>
+            </div>
+            <!--boton de registro-->
+            <br>
+            <button type="submit" class="boton">Entrar</button>
+            <p class="advertencia" id="advertencia"></p>
+            <p class="link"><a href="cuenta.html">Ya tienes Cuenta?</a></p>
+
+        </div>
+    </form>
+    
+    <script src="js/app.js"></script>
+
+</body>
+</html>
